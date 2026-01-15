@@ -1,0 +1,27 @@
+{
+  "name": "RetroGame-web",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "pnpm --filter src-server run dev",
+    "build:wasm": "wasm-pack build external/RetroGameCore/platforms/wasm --target web --out-dir ../../../../src/core-wasm --out-name index",
+    "dev:wasm": "wasm-pack build external/RetroGameCore/platforms/wasm --dev --target web --out-dir ../../../../src/core-wasm --out-name index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.17.1",
+  "dependencies": {
+    "vue": "^3.5.26"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.3",
+    "vite": "^7.3.1",
+    "vite-plugin-wasm": "^3.4.1",
+    "vite-plugin-top-level-await": "^1.4.4"
+  }
+}

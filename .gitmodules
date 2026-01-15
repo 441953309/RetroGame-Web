@@ -1,0 +1,3 @@
+[submodule "external/RetroGameCore"]
+	path = external/RetroGameCore
+	url = git@github.com:441953309/RetroGameCore.git
